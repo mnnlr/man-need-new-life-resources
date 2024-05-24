@@ -1,0 +1,25 @@
+.hero-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.card{
+    width: 70%;
+    margin-top: 200px;
+}
+
+.card img{
+    width: 100%;
+}
+.video-player{
+    width: 70%;
+}
+
+.player{
+    width: 100%;
+    margin-bottom: 7px;
+}

@@ -1,0 +1,39 @@
+.overflow-ellipsis {
+  --max-lines: 3;
+  --line-height: 1.4;
+  max-height: calc(var(--max-lines) * 1em * var(--line-height));
+  line-height: var(--line-height);
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 0px;
+}
+
+.overflow-ellipsis ::before {
+  content: "";
+  position: absolute;
+  height: calc(1em * var(--line-height));
+  width: 100%;
+  bottom: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, white);
+}
+
+.expand-btn {
+  appearance: none;
+  padding: 1px;
+  border-radius: 0.25em;
+  cursor: pointer;
+  color: #0080ff;
+}
+
+.expand-btn::before {
+  content: "show more...";
+}
+
+.expand-btn:checked::before {
+  content: "show less...";
+}
+
+.overflow-ellipsis:has(+ .expand-btn:checked) {
+  max-height: none;
+}

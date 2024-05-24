@@ -1,0 +1,95 @@
+.apply-leave{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.apply-leave-form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #323f4b 1px solid;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    
+}
+.user-id{
+    width: 90%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 0;
+}
+.drop-down{
+    width: 90%;
+    padding: 9px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.one-more-days{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.one-more-days div{
+    margin-right: 10px;
+}
+.more-days-leave{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+.more-days-leave div{
+    display: flex;
+    flex-direction: column;
+}
+.single-day-leave{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.label-style-leave{
+    margin-bottom: 10px;
+}
+.input-radio{
+    height: 15px;
+    width: 15px;
+}
+.input-date{
+    padding: 9px;
+    font-size: 17px;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.reason-label{
+    width: 90%;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+.leave-reason{
+    min-width: 85%;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    max-width: 85%;
+    min-height: 30px;
+
+}
+@media (max-width:600px){
+    .apply-leave-form{
+        width: 90%;
+    }
+}

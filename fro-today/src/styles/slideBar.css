@@ -1,0 +1,61 @@
+.app {
+  position: absolute;
+}
+
+.menu,
+.text {
+  position: fixed;
+  top: 0;
+  width: 35%;
+  height: 100%;
+  background-color: rgba(18, 153, 159, 0.5);
+  z-index: 1;
+}
+
+.menu {
+  left: -100%;
+  transition: all 0.3s ease;
+}
+
+.text {
+  width: 300px;
+  background-color: #12999f;
+  z-index: -13;
+}
+
+.activeMenu {
+  left: 0;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 180px 0 0 60px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  margin: 30px 20px 0 0;
+  font-weight: 600;
+}
+
+.menu ul li a:hover {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.micon {
+  position: absolute;
+  z-index: 12;
+  font-size: 50px;
+  margin-left: 200px;
+  cursor: pointer;
+  margin-top: -80px;
+  border: none;
+}
+
+.links {
+  display: block;
+}

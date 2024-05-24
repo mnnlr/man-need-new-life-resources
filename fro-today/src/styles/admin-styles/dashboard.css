@@ -1,0 +1,207 @@
+.dashboard {
+  overflow-y: hidden;
+}
+
+.dashboard .bar {
+  height: 4rem;
+  display: flex;
+  padding: 0 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.37);
+}
+
+.dashboard .bar > input {
+  margin-right: auto;
+  padding: 1rem 0;
+  border: none;
+  background-color: inherit;
+  width: 100%;
+  outline: none;
+}
+
+.dashboard .bar > svg {
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
+
+.dashboard .bar > img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.dashboard .widget-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 2rem 2rem 2rem 0;
+}
+
+.dashboard .widget-container .widget {
+  width: 16rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.132);
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.dashboard .widget-container .widget .widget-info > p {
+  opacity: 0.7;
+  font-size: 0.8rem;
+}
+
+.dashboard .widget-container .widget .widget-info > h4 {
+  font-size: 1.5rem;
+}
+
+.dashboard .widget-container .widget .widget-info > span {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.dashboard .widget-container .widget .widget-circle {
+  position: relative;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background-color: aquamarine;
+}
+
+.dashboard .widget-container .widget .widget-circle::before {
+  content: "";
+  position: absolute;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.dashboard .widget-container .widget .widget-circle span {
+  position: relative;
+}
+
+.dashboard .graph-container {
+  display: flex;
+  gap: 2rem;
+  padding: 0 2rem 2rem 0;
+}
+
+.dashboard .graph-container > div {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.dashboard .graph-container .revenue-chart {
+  width: 100%;
+  padding: 1rem 3rem;
+}
+
+.dashboard .graph-container .revenue-chart > h2 {
+  margin: 1rem 0 2rem 0.25rem;
+  text-align: center;
+}
+
+.dashboard .graph-container .dashboard-categories {
+  width: 100%;
+  max-width: 16rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.dashboard .graph-container .dashboard-categories > h2 {
+  margin: 1.5rem 0 2rem 0;
+  text-align: center;
+}
+
+.dashboard .graph-container .dashboard-categories > div {
+  overflow-y: auto;
+  height: 40rem;
+  padding-left: 0.5rem;
+  scrollbar-width: none;
+}
+
+.dashboard .graph-container .dashboard-categories > div::-webkit-scrollbar {
+  display: none;
+}
+
+.dashboard .graph-container .dashboard-categories .category-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.dashboard .graph-container .dashboard-categories .category-item > h5 {
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.dashboard .graph-container .dashboard-categories .category-item > div {
+  margin-left: auto;
+  width: 6rem;
+  background-color: rgb(217, 217, 217);
+  border-radius: 20px;
+  height: 0.5rem;
+}
+
+.dashboard .graph-container .dashboard-categories .category-item > div > div {
+  border-radius: 20px;
+  height: 100%;
+}
+
+.dashboard .graph-container .dashboard-categories .category-item > span {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.dashboard .transaction-container {
+  display: flex;
+  gap: 2rem;
+  padding: 0 2rem 2rem 0;
+  height: 30rem;
+}
+
+.dashboard .transaction-container > div {
+  background-color: white;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.132);
+  border-radius: 10px;
+}
+
+.dashboard .transaction-container .gender-chart {
+  width: 100%;
+  max-width: 20rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.dashboard .transaction-container .gender-chart > h2 {
+  text-align: center;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.dashboard .transaction-container .gender-chart > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.634);
+}
+
+.dashboard .transaction-container .transaction-box {
+  width: 100%;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.dashboard .transaction-container .transaction-box > h2 {
+  margin: 1.5rem 0 0 0;
+}

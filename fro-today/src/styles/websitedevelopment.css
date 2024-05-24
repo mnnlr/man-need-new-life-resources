@@ -1,0 +1,12 @@
+/* styles.css */
+
+.custom-carousel {
+  max-width: 350px; /* Adjust the maximum width of the carousel */
+}
+
+.custom-carousel .carousel-control-prev-icon,
+.custom-carousel .carousel-control-next-icon {
+  width: 30px; /* Increase arrow size */
+  height: 30px; /* Increase arrow size */
+  background-color: red !important; /* Change arrow color to red */
+}

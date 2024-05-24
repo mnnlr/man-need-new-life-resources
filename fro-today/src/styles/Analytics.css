@@ -1,0 +1,16 @@
+.main-button {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 20;
+    right: -20%;
+    top: 50%;
+    grid-gap: 20px;
+    transition: right 0.3s ease-in-out;
+}
+
+.main-button .each-main-button:hover {
+    right: 0%;
+}
+
+

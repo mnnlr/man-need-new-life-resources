@@ -1,0 +1,449 @@
+/* .container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: none;
+  justify-content: center;
+  align-items: center;
+  background-color: cornsilk;
+} */
+
+#first {
+  margin-right: 10px;
+}
+
+#next {
+  position: absolute;
+  bottom: 10px;
+  right: 2px;
+  width: 100px;
+}
+
+.contents {
+  width: 100%;
+  overflow: auto;
+  background-color: chartreuse;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* .contents1{
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  border: 1px solid black;
+  background-image: url('https://media.istockphoto.com/id/169993375/photo/bookshelf-inside-stockholm-public-library.jpg?s=612x612&w=0&k=20&c=D88pyK6vJMGSvoKjJwrogQK-6DhNclWgNz4Bohvnyeo=');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lib{
+
+  width: 40%;
+  color: white;
+  margin: auto;
+} */
+
+/* .images{
+   width: 100;
+   height: 80vh;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.image{
+   width: 30%;
+   height: 30%;
+} */
+
+/* #back {
+  position: absolute;
+  bottom: 10px;
+  left: 2px;
+  width: 100px;
+} */
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  overflow-y: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.red {
+  color: red;
+}
+
+.purple {
+  color: rgb(47, 0, 255);
+}
+
+.green {
+  color: rgb(0, 195, 0);
+}
+
+.container {
+  max-width: 1367px;
+  width: 100%;
+  margin: auto;
+  overflow: auto;
+}
+
+.heading {
+  letter-spacing: 3px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  padding: 1rem;
+  background-color: white;
+}
+
+.header a {
+  color: rgb(46, 46, 46);
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+.header a:hover {
+  color: rgb(0, 104, 136);
+}
+
+.header button {
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.header button:hover {
+  color: rgb(0, 104, 136);
+}
+
+.header dialog {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100px;
+  position: absolute;
+  left: calc(100% - 100px);
+  top: 8%;
+}
+
+.header dialog > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.admin-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 2rem;
+  height: 100vh;
+  background-color: rgb(247, 247, 247);
+  overflow: hidden;
+  margin-top: -10px;
+}
+
+.admin-container aside {
+  width: 100%;
+  background-color: white;
+  padding: 1rem;
+  z-index: 10;
+  /* overflow-y: hidden; */
+}
+
+.admin-container aside::-webkit-scrollbar {
+  display: none;
+}
+
+.admin-container aside > div {
+  margin: 2rem 1rem;
+}
+
+.admin-container aside h5 {
+  letter-spacing: 2px;
+  font-weight: 300;
+  opacity: 0.8;
+  margin: 1rem 0;
+}
+
+.admin-container aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.admin-container aside ul li {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+.admin-container aside ul li a {
+  color: rgba(0, 0, 0, 0.825);
+  display: flex;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.table th {
+  font-weight: bold;
+  color: #0000009e;
+  font-size: 1.1rem;
+  padding: 2rem 1rem;
+}
+
+.table tbody tr {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.093);
+}
+
+.table tbody td {
+  padding: 1rem;
+}
+
+.table tbody td img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.table tbody td a {
+  text-decoration: none;
+  background-color: rgba(44, 104, 255, 0.455);
+  color: rgba(44, 104, 255);
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+}
+
+.table tbody td button {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: rgb(255, 44, 44);
+}
+
+.table tbody td button:hover {
+  opacity: 0.6;
+}
+
+.loader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader > div {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border-top: 1rem solid rgb(43, 43, 43);
+  border-left: 1rem solid rgb(43, 43, 43);
+  border-right: 1rem solid #fff;
+  border-bottom: 1rem solid #fff;
+  animation: loading-animation 0.5s linear infinite;
+}
+
+@keyframes loading-animation {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .admin-container .widget-container,
+  .admin-container .graph-container,
+  .admin-container .transaction-container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .admin-container .graph-container {
+    padding: 2rem;
+  }
+
+  .admin-container .transaction-container {
+    padding: 2rem;
+    height: unset;
+  }
+
+  .product-management {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .admin-container {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cart {
+    display: block;
+    padding: 2rem;
+  }
+
+  .cartitem > img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .cartitem > div {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .product-search-page {
+    display: block;
+    padding: 0;
+  }
+
+  .product-search-page aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: none;
+  }
+
+  .product-search-page aside h2 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .product-search-page main input {
+    width: 100%;
+    border: 1px solid rgba(212, 212, 212, 0.379);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .product-management {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .product-management section {
+    max-width: 400px;
+  }
+
+  .chart-container h1 {
+    margin: 0;
+    text-align: center;
+  }
+
+  .chart-container section {
+    margin: 8rem auto;
+  }
+
+  .dashboard-app-container section .coupon-form,
+  .dashboard-app-container section .stopwatch {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dashboard-app-container section .stopwatch {
+    align-items: center;
+  }
+}
+
+/* .logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+.form {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.radio-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.error {
+  font-size: 0.8rem;
+  color: red;
+} */

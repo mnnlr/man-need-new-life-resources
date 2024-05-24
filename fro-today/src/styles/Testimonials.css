@@ -1,0 +1,18 @@
+.carousel {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%; */
+  gap: 20px;
+  padding: 10px;
+  margin-left: 120px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 120px;
+}
