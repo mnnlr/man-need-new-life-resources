@@ -66,7 +66,7 @@ import PerformanceRoute from "./Router/PerformanceRoute.js";
 import webDesignRouter from "./Router/webDesignRoutes.js";
 import EmployeeRegistrationRoute from "./Router/employeeRegistraionRoute.js";
 import LeaveRouter from "./Router/LeaveRoute.js";
-import teamRouter from "./Router/teamRoute.js";
+import teamRoute from "./Router/TeamRoute.js"
 
 app.use(userRouter);
 app.use(webDesignRouter);
@@ -90,7 +90,7 @@ app.use("/api/v1", userRoute);
 app.use("/api/v1/performance", PerformanceRoute);
 
 app.use("/leave", LeaveRouter);
-app.use("/team", teamRouter);
+app.use("/team", teamRoute);
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_NAME,
